@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="https://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Files Api</title>
+</head>
+<body>
+<main>
+    <section>
+    <h3>Upload Multiple files</h3>
+    <form method="post" th:action="@{/api/upload_file}" enctype="multipart/form-data">
+        <input type="file" name="files" multiple required accept=".pdf"/>
+        <input type="submit" value="Upload files">
+    </form>
+    </section>
+    <section>
+        <h3>List of documents</h3>
+        <table>
+            <thead>
+            <tr>
+                <th>Id</th>
+                <th>Download Link</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr th:each="file:${files}" th:object="${file}">
+                <td th:text="*{id}"></td>
+                <td><a th:href="@{|/api/download_file/*{id}|}" th:text="*{id}">Download</a></td>
+            </tr>
+            </tbody>
+        </table>
+    </section>
+</main>
+</body>
+</html>
