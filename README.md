@@ -17,7 +17,7 @@
 
 ### This is an instance how you can make it.
 
-*First of all create master.xml file which will be the main file containing other changes made in thanks to liquibase*
+*First of all create master.xml file which will be the main file containing other changes made thanks to liquibase*
 
 ```xml 
 <?xml version="1.0" encoding="UTF-8"?>
@@ -35,7 +35,7 @@
 ```yml
 spring:
   liquibase:
-    change-log: classpath:db/master.xml
+    change-log: classpath:db/changelog/master.xml
 ```
 <img src="https://user-images.githubusercontent.com/95692103/188752577-45ce0d6e-1232-4e4c-9084-e1f9e6ed75c5.png" width="240" align="center">
 
