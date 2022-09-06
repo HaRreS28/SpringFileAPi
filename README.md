@@ -19,7 +19,7 @@
 
 *First of all create master.xml file which will be the main file containing other changes made in thanks to liquibase*
 
-```
+```xml 
 <?xml version="1.0" encoding="UTF-8"?>
 <databaseChangeLog
         xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
@@ -32,7 +32,7 @@
 
 *The main file declared in application.properties or application.yml by using*
 
-```
+```yml
 spring:
   liquibase:
     change-log: classpath:db/master.xml
@@ -41,7 +41,7 @@ spring:
 
 *And here some example of file included in master*
 
-```
+```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <databaseChangeLog
         xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
