@@ -36,9 +36,9 @@ private final DocService docService;
         String path = UriComponentsBuilder.fromPath("/").build().toString();
         String path2 = UriComponentsBuilder.fromPath("/").query("s").build().toString();
         String path24 = UriComponentsBuilder.fromPath("/").queryParam("s","s").build().toString();
-        System.out.println("path 1 "+path);
-        System.out.println("path 2 "+path2);
-        System.out.println("path 24 "+path24);
+//         System.out.println("path 1 "+path);
+//         System.out.println("path 2 "+path2);
+//         System.out.println("path 24 "+path24);
         String path3 = UriComponentsBuilder.fromPath("/{s}/{s}")
                 .buildAndExpand("s1","s2").toString();
         System.out.println("path 3 "+path3);
