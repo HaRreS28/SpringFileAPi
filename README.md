@@ -37,7 +37,7 @@ spring:
   liquibase:
     change-log: classpath:db/master.xml
 ```
-<img src="https://user-images.githubusercontent.com/95692103/188752577-45ce0d6e-1232-4e4c-9084-e1f9e6ed75c5.png" width="240"/>
+<img src="https://user-images.githubusercontent.com/95692103/188752577-45ce0d6e-1232-4e4c-9084-e1f9e6ed75c5.png" width="240" align="center">
 
 *And here some example of file included in master*
 
